@@ -1,6 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
+  "homepage": "https://ilansuli.github.io/protfolio",
   "private": true,
   "dependencies": {
     "@emotion/babel-plugin": "^11.11.0",
