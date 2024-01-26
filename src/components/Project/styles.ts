@@ -34,7 +34,7 @@ export const Container = styled.section`
         display: flex;
         align-items: center;
         justify-content: space-between;
-        color: var(--blue);
+        color: var(--black);
         margin-bottom: 3.6rem;
         .project-links {
           display: flex;
