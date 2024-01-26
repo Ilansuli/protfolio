@@ -96,6 +96,9 @@ export function About() {
           </div>
         </div>
       </div>
+      <ScrollAnimation animateIn="fadeInRight">
+        <div className="blob"></div>
+      </ScrollAnimation>
     </Container>
   );
 }

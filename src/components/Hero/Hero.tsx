@@ -37,7 +37,7 @@ export function Hero() {
           <a
             style={{ marginInlineStart: "1rem" }}
             href={CV}
-            download
+            download="Ilan Sulimanov - Resume.pdf"
             className="button"
           >
             CV

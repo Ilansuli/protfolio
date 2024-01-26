@@ -130,12 +130,12 @@ export function Project() {
       tech: ["React", "Redux", "Vite", "Sass"],
     },
     {
-      title: "Sobokan Game",
+      title: "AppSus - Gmail & Keep",
       imgSrc:
-        "https://res.cloudinary.com/dmmsf57ko/image/upload/v1683734217/Sobokan_h9qcdb.jpg",
-      link: "https://ilansuli.github.io/Sobokan-Game/",
-      desc: "Sokoban is a classic puzzle game that challenges players to move boxes to their designated locations in a warehouse setting. The game features an intuitive and user-friendly interface, allowing players to easily move boxes using the arrow keys on their keyboard. As a developer, I take pride in creating a game that is both fun and challenging while utilizing only HTML, CSS, and JavaScript.",
-      tech: ["HTML", "CSS", "Javascript"],
+        "https://res.cloudinary.com/dmmsf57ko/image/upload/v1683720247/AppSus-email_yqs8bs.jpg",
+      link: "https://ilansuli.github.io/AppSus/#/",
+      desc: "Check out Appsus, a suite of web applications inspired by Google`s popular services, Gmail and Keep. Each app has it`s full CRUDL support, a responsive design and with a special feature to integrate between the apps, transforming an email to a note. The applications were built using Vue.js, a versatile and easy-to-use JavaScript framework for building user interfaces.",
+      tech: ["Vue", "Vuex", "Sass"],
     },
     {
       title: "Fitty - In development",
@@ -155,7 +155,7 @@ export function Project() {
   return (
     <Container id="project">
       <ScrollAnimation animateIn="fadeInUp" delay={0.1 * 1000}>
-        <h2>My Projects</h2>
+        <h2>My Latest Projects</h2>
       </ScrollAnimation>
       {/* <ScrollAnimation animateIn="fadeInUp" delay={0.1 * 1000}> */}
       <ProjectList>
@@ -164,7 +164,7 @@ export function Project() {
             <ProjectImgWrapper>
               <ProjectLink href={link}>
                 <ProjectImg>
-                  {title !== "Fitty" && (
+                  {title !== "Fitty - In development" && (
                     <IconBox className="icon-box">
                       <EyeIconWrapper>
                         <svg
