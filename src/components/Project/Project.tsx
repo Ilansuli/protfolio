@@ -7,22 +7,22 @@ import styled from "@emotion/styled";
 import eyeIcon from "../../assets/eye-icon.svg";
 
 const ProjectList = styled.ul`
-  display: grid;
+  /* display: grid; */
   /* grid-template-columns: 1fr 1fr 1fr; */
-  gap: 30px;
+  /* gap: 30px; */
   margin-bottom: 10px;
 `;
 
 const ProjectItemList = styled.li`
   display: block;
   animation: scaleUp 0.25s ease forwards;
-  display: grid;
   grid-auto-flow: row;
   align-items: center;
   justify-content: center;
-  grid-auto-columns: 1fr 1.5fr;
-
+  margin-block-end: 2rem;
   @media (min-width: 980px) {
+    display: grid;
+    grid-auto-columns: 1fr 1.5fr;
     grid-auto-flow: column;
     gap: 3rem;
   }
@@ -106,6 +106,7 @@ const ProjectTech = styled.ul`
   display: flex;
   margin-block: 1rem;
   gap: 0.4rem;
+  flex-wrap: wrap;
 `;
 const ProjectTechItem = styled.li`
   font-weight: 600;
