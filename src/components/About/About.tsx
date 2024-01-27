@@ -21,11 +21,14 @@ export function About() {
           <h2>About me</h2>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft">
+          <p>Hi there!</p>
           <p>
-            Hi there! I'm Ilan, a Fullstack / Frontend developer with a passion
-            for creating custom online experiences. With my specialization in
-            MERN/MEVN Stack & Typescript I have the tools to bring any website
-            or app vision to life.
+            I'm Ilan, a Fullstack / Frontend developer with a passion for
+            creating custom online experiences.
+          </p>
+          <p>
+            With my specialization in MERN/MEVN Stack & Typescript I have the
+            tools to bring any website or app vision to life.
           </p>
         </ScrollAnimation>
 
