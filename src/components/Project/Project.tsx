@@ -5,6 +5,15 @@ import externalLink from "../../assets/external-link.svg";
 import ScrollAnimation from "react-animate-on-scroll";
 import styled from "@emotion/styled";
 import eyeIcon from "../../assets/eye-icon.svg";
+import tanstackQueryIcon from "../../assets/tanstack-query-icon.svg";
+import reactIcon from "../../assets/react-icon.svg";
+import vitejsIcon from "../../assets/vitejs-icon.svg";
+import reduxIcon from "../../assets/redux-icon.svg";
+import vueIcon from "../../assets/vue-icon.svg";
+import vuexIcon from "../../assets/vuex-icon.svg";
+import sassIcon from "../../assets/sass-icon.svg";
+import styledCmpIcon from "../../assets/styled-cmps-icon.svg";
+import muiIcon from "../../assets/mui-icon.svg";
 
 const ProjectList = styled.ul`
   /* display: grid; */
@@ -105,11 +114,15 @@ const ProjectDesc = styled.p``;
 const ProjectTech = styled.ul`
   display: flex;
   margin-block: 1rem;
-  gap: 0.4rem;
+  gap: 1rem;
   flex-wrap: wrap;
 `;
 const ProjectTechItem = styled.li`
   font-weight: 600;
+`;
+const TechIcon = styled.img`
+  width: 20px;
+  height: 20px;
 `;
 export function Project() {
   const projects = [
@@ -119,7 +132,7 @@ export function Project() {
         "https://res.cloudinary.com/dmmsf57ko/image/upload/v1683730488/DemoPlaylist_ly217i.jpg",
       link: "https://satisfy-2v03.onrender.com/#/station",
       desc: "Satisfy is a project based on the famous Spotify app that allows users to sign up, log in, and build their own playlists with their desired songs. The app also features real-time synchronization with mobile devices using sockets and is fully responsive. Additionally, the app utilizes YouTube`s API to retrieve song information and integrate YouTube videos.",
-      tech: ["Vue", "Vuex", "Vite", "Sass"],
+      techIcons: [vueIcon, vuexIcon, vitejsIcon, sassIcon],
     },
 
     {
@@ -128,7 +141,7 @@ export function Project() {
         "https://res.cloudinary.com/dmmsf57ko/image/upload/v1688390118/WhatsApp_Image_2023-07-03_at_16.06.17_yz12iz.jpg",
       link: "https://o-pea-app-cd5a.onrender.com/",
       desc: "O-pea is an end-to-end Project that revolutionizes recipe discovery by offering a convenient and personalized experience. With a focus on pantry-based cooking, it allows users to explore an extensive database of recipes tailored to the ingredients they already have. Say goodbye to food waste and hello to delicious meals with O-pea`s intuitive interface and smart ingredient matching system.",
-      tech: ["React", "Redux", "Vite", "Sass"],
+      techIcons: [reactIcon, reduxIcon, vitejsIcon, sassIcon],
     },
     {
       title: "AppSus - Gmail & Keep",
@@ -136,7 +149,7 @@ export function Project() {
         "https://res.cloudinary.com/dmmsf57ko/image/upload/v1683720247/AppSus-email_yqs8bs.jpg",
       link: "https://ilansuli.github.io/AppSus/#/",
       desc: "Check out Appsus, a suite of web applications inspired by Google`s popular services, Gmail and Keep. Each app has it`s full CRUDL support, a responsive design and with a special feature to integrate between the apps, transforming an email to a note. The applications were built using Vue.js, a versatile and easy-to-use JavaScript framework for building user interfaces.",
-      tech: ["Vue", "Vuex", "Sass"],
+      techIcons: [vueIcon, vuexIcon, sassIcon],
     },
     {
       title: "Fitty - In development",
@@ -144,12 +157,12 @@ export function Project() {
         "https://res.cloudinary.com/dmmsf57ko/image/upload/v1706282938/takavq458jc8zexbe9xf.jpg",
       link: undefined,
       desc: "A dropshipping application that makes comparison between users' with the same body-measurements and suggests clothes accordingly.",
-      tech: [
-        "React",
-        "Tanstack Query",
-        "Tanstack Router",
-        "MUI",
-        "Styled Components",
+      techIcons: [
+        reactIcon,
+        vitejsIcon,
+        tanstackQueryIcon,
+        muiIcon,
+        styledCmpIcon,
       ],
     },
   ];
@@ -160,7 +173,7 @@ export function Project() {
       </ScrollAnimation>
       {/* <ScrollAnimation animateIn="fadeInUp" delay={0.1 * 1000}> */}
       <ProjectList>
-        {projects.map(({ link, imgSrc, title, desc, tech }) => (
+        {projects.map(({ link, imgSrc, title, desc, techIcons }) => (
           <ProjectItemList key={link}>
             <ProjectImgWrapper>
               <ProjectLink href={link}>
@@ -207,10 +220,11 @@ export function Project() {
               <Title>{title}</Title>
               <ProjectDesc>{desc}</ProjectDesc>
               <ProjectTech>
-                {tech.map((t, index) => (
+                {techIcons.map((t, index) => (
                   <>
-                    <ProjectTechItem key={index}>{t}</ProjectTechItem>
-                    {index !== tech.length - 1 && <p>,</p>}
+                    <ProjectTechItem key={index}>
+                      <TechIcon src={t} />
+                    </ProjectTechItem>
                   </>
                 ))}
               </ProjectTech>
