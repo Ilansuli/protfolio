@@ -7,8 +7,8 @@ export const Container = styled.section`
   gap: 13rem;
   .blob {
     background-image: url("https://res.cloudinary.com/dmmsf57ko/image/upload/v1706302295/eoxe5a2fbzlddjqmacvl.png");
-    width: 380px;
     height: 380px;
+
     background-size: cover;
     -webkit-background-position: center;
     background-position: center center;
@@ -16,9 +16,10 @@ export const Container = styled.section`
     box-shadow: 0 5px 5px 5px rgba(13, 110, 253, 0.2);
     animation: animate 8s ease-in-out infinite;
     transition: all 0.5s ease-in-out;
-    display: none;
-    @media (min-width: 1100px) {
-      display: block;
+    /* display: none; */
+    @media (max-width: 980px) {
+      max-width: 300px;
+      /* display: block; */
     }
   }
 
@@ -71,7 +72,7 @@ export const Container = styled.section`
 
   .about-image {
     text-align: center;
-    img {
+    .blob {
       margin-top: 2rem;
       width: 75%;
       filter: grayscale(0);
@@ -86,7 +87,7 @@ export const Container = styled.section`
     .about-image {
       max-width: 100%;
       margin-top: 4rem;
-      img {
+      .blob {
         margin-top: 2rem;
         width: 100%;
         filter: grayscale(0);
@@ -107,7 +108,11 @@ export const Container = styled.section`
     .about-image {
       display: flex;
       max-width: 100%;
-      img {
+      @media (max-width: 960px) {
+        display: block;
+      }
+      .blob {
+        margin-inline: auto;
         margin-top: 2rem;
         width: 100%;
         filter: grayscale(0);

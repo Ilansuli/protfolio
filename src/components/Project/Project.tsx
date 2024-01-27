@@ -160,7 +160,7 @@ export function Project() {
       {/* <ScrollAnimation animateIn="fadeInUp" delay={0.1 * 1000}> */}
       <ProjectList>
         {projects.map(({ link, imgSrc, title, desc, tech }) => (
-          <ProjectItemList>
+          <ProjectItemList key={link}>
             <ProjectImgWrapper>
               <ProjectLink href={link}>
                 <ProjectImg>
@@ -208,7 +208,7 @@ export function Project() {
               <ProjectTech>
                 {tech.map((t, index) => (
                   <>
-                    <ProjectTechItem>{t}</ProjectTechItem>
+                    <ProjectTechItem key={index}>{t}</ProjectTechItem>
                     {index !== tech.length - 1 && <p>,</p>}
                   </>
                 ))}
