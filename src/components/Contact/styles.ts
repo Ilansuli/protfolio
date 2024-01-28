@@ -37,7 +37,8 @@ export const Container = styled.section`
         width: 4rem;
       }
       a {
-        color: var(--black);
+        color: var(--white);
+        letter-spacing: 2px;
         font-weight: 500;
       }
       &:hover {

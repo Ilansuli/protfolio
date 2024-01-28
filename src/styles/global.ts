@@ -15,6 +15,7 @@ export const GlobalStyle = createGlobalStyle`
         transition: 0.5s;
         background-color: #f5f5f5;
         color: var(--black);
+        fill: var(--black);
       }
 
       .logo{
@@ -80,6 +81,8 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 1.6rem;
     -webkit-font-smoothing: antialiased;
     background-color: var(--black);
+    fill: #FFF;
+
     color: #FFFF;
   }
 
@@ -120,4 +123,4 @@ export const GlobalStyle = createGlobalStyle`
   }
   
 
-`
+`;

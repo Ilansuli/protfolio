@@ -99,11 +99,11 @@ export function About() {
           </div>
         </div>
       </div>
-      <div className="about-image">
+      {/* <div className="about-image">
         <ScrollAnimation animateIn="fadeInRight" delay={0.2 * 1000}>
           <div className="blob"></div>
         </ScrollAnimation>
-      </div>
+      </div> */}
     </Container>
   );
 }
