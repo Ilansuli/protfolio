@@ -139,7 +139,7 @@ export function Project() {
       title: "O-pea",
       imgSrc:
         "https://res.cloudinary.com/dmmsf57ko/image/upload/v1688390118/WhatsApp_Image_2023-07-03_at_16.06.17_yz12iz.jpg",
-      link: "https://o-pea-app-cd5a.onrender.com/",
+      link: "https://o-pea-m2qy.onrender.com/",
       desc: "O-pea is an end-to-end Project that revolutionizes recipe discovery by offering a convenient and personalized experience. With a focus on pantry-based cooking, it allows users to explore an extensive database of recipes tailored to the ingredients they already have. Say goodbye to food waste and hello to delicious meals with O-pea`s intuitive interface and smart ingredient matching system.",
       techIcons: [reactIcon, reduxIcon, vitejsIcon, sassIcon],
     },
