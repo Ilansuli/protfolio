@@ -151,6 +151,21 @@ export function Project() {
       desc: "Check out Appsus, a suite of web applications inspired by Google`s popular services, Gmail and Keep. Each app has it`s full CRUDL support, a responsive design and with a special feature to integrate between the apps, transforming an email to a note. The applications were built using Vue.js, a versatile and easy-to-use JavaScript framework for building user interfaces.",
       techIcons: [vueIcon, vuexIcon, sassIcon],
     },
+    
+    {
+      title: "Gan Shel Shoshanim",
+      imgSrc:
+        "https://res.cloudinary.com/dmmsf57ko/image/upload/v1709806469/hcoclje1hkke4on1vh93.jpg",
+      link: 'https://ganshelshoshanim.com/',
+      desc: "A corporate website for a development of gardens business in israel",
+      techIcons: [
+        reactIcon,
+        vitejsIcon,
+        tanstackQueryIcon,
+        muiIcon,
+        styledCmpIcon,
+      ],
+    },
     {
       title: "Gan Shel Shoshanim",
       imgSrc:
