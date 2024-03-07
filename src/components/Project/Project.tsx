@@ -152,6 +152,20 @@ export function Project() {
       techIcons: [vueIcon, vuexIcon, sassIcon],
     },
     {
+      title: "Gan Shel Shoshanim",
+      imgSrc:
+        "https://res.cloudinary.com/dmmsf57ko/image/upload/v1709806469/hcoclje1hkke4on1vh93.jpg",
+      link: "https://ganshelshoshanim.com/",
+      desc: "A corporate website for a development of gardens business in israel",
+      techIcons: [
+        reactIcon,
+        vitejsIcon,
+        tanstackQueryIcon,
+        muiIcon,
+        styledCmpIcon,
+      ],
+    },
+    {
       title: "Fitty - In development",
       imgSrc:
         "https://res.cloudinary.com/dmmsf57ko/image/upload/v1706282938/takavq458jc8zexbe9xf.jpg",
