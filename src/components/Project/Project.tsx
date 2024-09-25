@@ -129,7 +129,8 @@ export function Project() {
     {
       title: "Satisfy",
       imgSrc:
-        "https://res.cloudinary.com/dmmsf57ko/image/upload/v1683730488/DemoPlaylist_ly217i.jpg",    link:"https://satisfy-0-2.onrender.com/#/station"
+        "https://res.cloudinary.com/dmmsf57ko/image/upload/v1683730488/DemoPlaylist_ly217i.jpg", 
+      link:"https://satisfy-0-2.onrender.com/#/station",
       desc: "Satisfy is a project based on the famous Spotify app that allows users to sign up, log in, and build their own playlists with their desired songs. The app also features real-time synchronization with mobile devices using sockets and is fully responsive. Additionally, the app utilizes YouTube`s API to retrieve song information and integrate YouTube videos.",
       techIcons: [vueIcon, vuexIcon, vitejsIcon, sassIcon],
     },
